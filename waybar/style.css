@@ -1,0 +1,98 @@
+@import "mocha.css";
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: JetBrainsMono Nerd Font, monospace;
+  font-weight: bold;
+  font-size: 14px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: @text;
+}
+
+tooltip {
+  background: @surface0;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: @sky;
+}
+
+#workspaces button {
+  color: @text;
+  margin: 0px;
+  margin-right: 5px;
+  padding: 0px;
+}
+
+#workspaces button.active {
+  color: @sky;
+}
+
+#workspaces button.urgent {
+  color: @red;
+}
+
+#window,
+#clock,
+#battery,
+#backlight,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#tray,
+#mpris,
+#custom-updates,
+#workspaces {
+  background: @surface0;
+  padding: 0 10px;
+  margin: 3px 0px;
+  margin-top: 10px;
+  border: 1px solid @sky;
+}
+
+#tray {
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+#workspaces {
+  background: @surface0;
+  border-radius: 10px;
+  margin-left: 10px;
+  padding-left: 5px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+#custom-updates {
+  border-radius: 10px 0px 0px 10px;
+}
+
+#clock {
+  border-radius: 0px 10px 10px 0px;
+}
+
+#custom-power,
+#custom-logout,
+#custom-reboot,
+#custom-lock {
+  background: @surface0;
+  border: 1px solid @sky;
+  margin: 3px 0px;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+#custom-power {
+  border-left: 0px;
+}
+
+#custom-reboot {
+  border-right: 0px;
+}

@@ -1,0 +1,160 @@
+.bar {
+  min-height: 10px;
+  font-size: 16px;
+  background-color: transparent;
+  padding: 0px;
+  margin: 0px;
+}
+
+.bar button {
+  min-width: 0px;
+  padding: 0px;
+  background-color: transparent;
+  border: none;
+  transition: none;
+}
+
+.bar button:hover {
+  background-color: transparent;
+}
+
+.bar label {
+  padding: 0px;
+  font-weight: bold;
+}
+
+.bar-center-box {
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+
+.bar-start,
+.bar-center,
+.bar-end {
+  padding: 3px 10px;
+  border: 2px solid @theme_selected_bg_color;
+}
+
+.bar-start {
+  background-color: @theme_bg_color;
+  border-left: 0px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.bar-center {
+  background-color: @theme_bg_color;
+  border-radius: 10px;
+}
+
+.bar-end {
+  padding-right: 0px;
+  border-right: 0px;
+  background-color: @theme_bg_color;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.bar-end-media circular-progress {
+  min-width: 25px;
+  min-height: 25px;
+  font-size: 2px;
+  color: @theme_selected_bg_color;
+  margin-right: 4px;
+}
+
+.bar-end-media circular-progress label {
+  font-size: 14px;
+}
+
+.bar-start-workspaces button {
+  padding: 0px 10px;
+}
+
+.bar-start-workspaces button.focused {
+  color: @theme_selected_bg_color;
+}
+
+.bar-end-power {
+  padding-right: 10px;
+}
+
+.shutdown {
+  color: #f38ba8;
+}
+
+.reboot {
+  color: #fab387;
+}
+
+.logout {
+  color: #b4befe;
+}
+
+.lock {
+  color: #89dceb;
+}
+
+.bar-end-system-tray button {
+  padding: 0 10px;
+}
+
+.bar-start-time {
+  margin-right: 8px;
+}
+
+window.notification-popups box.notifications {
+  padding: .5em;
+}
+
+.notification-icon {
+  min-width: 68px;
+  min-height: 68px;
+  margin-right: 1em;
+}
+
+.notification-icon image {
+  font-size: 58px;
+  /* to center the icon */
+  margin: 5px;
+  color: @theme_fg_color;
+}
+
+.notification-icon box {
+  min-width: 68px;
+  min-height: 68px;
+  border-radius: 7px;
+}
+
+.notification {
+  min-width: 350px;
+  border-radius: 11px;
+  padding: 1em;
+  margin: .5em;
+  border: 2px solid @theme_selected_bg_color;
+  background-color: @theme_bg_color;
+}
+
+.notification.critical {
+  border: 1px solid lightcoral;
+}
+
+.notification-title {
+  color: @theme_fg_color;
+  font-size: 1.4em;
+}
+
+.notification-body {
+  color: @theme_unfocused_fg_color;
+}
+
+.notification-actions-button {
+  margin: 0 .4em;
+  margin-top: .8em;
+}
+
+.notification-actions-button:first-child {
+  margin-left: 0;
+}
+
+.notficiation-actionss-button:last-child {
+  margin-right: 0;
+}

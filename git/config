@@ -1,0 +1,16 @@
+[user]
+  name = T-D3V
+  email = td3v+git@td3v.ch
+  signingkey = FD0CA90F68A5D2B1
+[core]
+  editor = nvim
+[color]
+  ui = true
+[github]
+  user = T-D3V
+[push]
+  autoSetupRemote=true
+[commit]
+  gpgsign=true
+[safe]
+  directory = *
