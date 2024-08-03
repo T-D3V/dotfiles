@@ -1,0 +1,28 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+- clean: ['~', '~/.config']
+- create:
+    ~/.ssh:
+      mode: 0700
+- link: 
+    ~/.zshrc: zshrc
+    ~/.config/nvim: nvim
+    ~/.config/hypr: hypr
+    ~/.config/kitty: kitty
+    ~/.config/starship.toml: starship.toml
+    ~/.config/waybar: waybar
+    ~/.config/gtk-3.0: gtk-3.0
+    ~/.config/xsettingsd: xsettingsd
+    ~/.gtkrc-2.0: gtkrc-2.0
+    ~/.config/Kvantum: Kvantum
+    ~/.config/ranger: ranger
+    ~/.config/lazygit: lazygit
+    ~/.config/neofetch: neofetch
+    ~/.config/btop: btop
+    ~/.config/fuzzel: fuzzel
+    ~/.config/git: git
+    ~/.config/ags: ags
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
