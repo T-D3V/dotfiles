@@ -24,5 +24,10 @@
     ~/.config/fuzzel: fuzzel
     ~/.config/git: git
     ~/.config/ags: ags
+    ~/.config/spotify-flags.conf: spotify-flags.conf
+    ~/.config/discord/settings.json: discord/settings.json
+    ~/.config/BetterDiscord/data/stable: betterdiscord/data/stable
+    ~/.config/BetterDiscord/plugins: betterdiscord/plugins
+    ~/.config/BetterDiscord/themes: betterdiscord/themes
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
