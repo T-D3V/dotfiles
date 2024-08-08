@@ -40,10 +40,16 @@ export default () => Widget.EventBox({
       Widget.Label({})
         .hook(mpris, label => {
           const player = mpris.getPlayer('playerctld')
-          if (player)
-            label.label = `${player.track_title} - ${player.track_artists.join(', ')}`
-          else
-            label.label = 'No Music'
+          if (player) {
+            if (
+              player.track_title === 'Unknown title' &&
+              player.track_artists.join(', ') === 'Unknown artist'
+            )
+              label.label = 'No Information'
+            else
+              label.label = `${player.track_title} - ${player.track_artists.join(', ')}`
+          }
+          else { label.label = 'No Music' }
         }),
     ],
   }),
